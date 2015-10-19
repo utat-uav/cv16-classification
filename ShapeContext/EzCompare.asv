@@ -1,10 +1,4 @@
-function EzCompare( TargetFile, ns )
-% ns - number of sigmas (std dev) to compare against
-%     default = 2;
-
-if nargin < 2
-   ns = 2;
-end
+function shape_score = EzCompare( TargetFile )
 
 Xshape = ContourPoints(TargetFile);
 
@@ -26,9 +20,9 @@ end
 
 % calculate std dev and find sigma outliers
 sh_stdev = std(shape_score);
-sh_indices = find(abs(shape_score - median(shape_score)) > ns*sh_stdev);
+sh_idx = abs(shape_score - median(shape_score)) > sh_stdev;
 
-for j = 1:length(sh_indices)
-   idx = sh_indices(j);
-   fprintf('The shape may be a %s, with a score of %0.4f\n', shapes{idx}, shape_score(idx));
-end
+% find 3 sigma outliers:
+%outlier = abs(shape_sc
+%fprintf('The shape is a %s, with a score of %0.4f\n', maxshape, maxscore);
+
