@@ -1,4 +1,4 @@
-﻿Build started 12/25/2015 11:54:59 PM.
+﻿Build started 12/29/2015 3:19:48 AM.
      1>Project "D:\Workspace\UAV\cv16-classification\SoftmaxRegression\SoftmaxRegression\SoftmaxRegression.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\Workspace\UAV\cv16-classification\SoftmaxRegression\SoftmaxRegression\OpenCV" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\SoftmaxRegression.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt SoftmaxRegression.cpp
@@ -11,4 +11,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.04
+Time Elapsed 00:00:01.23
