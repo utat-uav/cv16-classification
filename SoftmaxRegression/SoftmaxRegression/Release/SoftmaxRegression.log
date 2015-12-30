@@ -1,0 +1,22 @@
+﻿Build started 12/30/2015 5:12:23 AM.
+     1>Project "D:\Workspace\UAV\cv16-classification\SoftmaxRegression\SoftmaxRegression\SoftmaxRegression.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\Workspace\UAV\cv16-classification\SoftmaxRegression\SoftmaxRegression\OpenCV" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Release\SoftmaxRegression.pch" /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt SoftmaxRegression.cpp
+         SoftmaxRegression.cpp
+     1>SoftmaxRegression.cpp(86): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+     1>SoftmaxRegression.cpp(238): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>SoftmaxRegression.cpp(301): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Workspace\UAV\cv16-classification\SoftmaxRegression\Release\SoftmaxRegression.exe" /INCREMENTAL:NO /NOLOGO opencv_world300.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Workspace\UAV\cv16-classification\SoftmaxRegression\Release\SoftmaxRegression.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Workspace\UAV\cv16-classification\SoftmaxRegression\Release\SoftmaxRegression.lib" /MACHINE:X86 /SAFESEH Release\SoftmaxRegression.obj
+         Release\stdafx.obj
+         Generating code
+         1 of 445 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+           0 functions were new in current compilation
+           1 functions had inline decision re-evaluated but remain unchanged
+         Finished generating code
+         SoftmaxRegression.vcxproj -> D:\Workspace\UAV\cv16-classification\SoftmaxRegression\Release\SoftmaxRegression.exe
+     1>Done Building Project "D:\Workspace\UAV\cv16-classification\SoftmaxRegression\SoftmaxRegression\SoftmaxRegression.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.07
