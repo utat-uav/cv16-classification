@@ -15,12 +15,23 @@ function n2 = dist2(x, c)
 
 %	Copyright (c) Christopher M Bishop, Ian T Nabney (1996, 1997)
 
+% Stores the size (rows, columns) of x in ndata, dimx
 [ndata, dimx] = size(x);
+
+% Stores the size (rows, columns) of c in ncentres, dimc
 [ncentres, dimc] = size(c);
+
+% The column sizes of both input arrays needs to be the same, otherwise it
+% will just throw an error and exit the program
 if dimx ~= dimc
 	error('Data dimension does not match dimension of centres')
 end
 
+% Returns an array n2, the math behind it is as follows:
+%   (1) [ix1 column of sum of squares of each item in ith row]^T +
+%   (2) ... [ix1 column of sum of squares of each item in ith row] -
+%   (3) ... 2(x matrix multiplied by the transposed c)
+%    -> where inputs are the same: equivalent to (x.^2)' + x.^2 - 2.x*x'
 n2 = (ones(ncentres, 1) * sum((x.^2)', 1))' + ...
   		ones(ndata, 1) * sum((c.^2)',1) - ...
   		2.*(x*(c'));
